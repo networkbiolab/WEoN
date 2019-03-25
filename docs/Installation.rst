@@ -3,7 +3,7 @@ Installation
 
 First, be aware that WEoN runs a PERL script that filter out the regulations
 from the gold standard GRN. Please follow the specific instructions for your
-platform `here<https://www.perl.org/get.html>`_. Also, the app backend is in
+platform `here <https://www.perl.org/get.html>`_. Also, the app backend is in
 transition to python, so please also follow intructions to get python ``_.
 
 There are two different ways to install WEoN:
@@ -15,7 +15,7 @@ There are two different ways to install WEoN:
    *OR*
 
 2. **Install from the Cytoscape App Store.** Download the app from the Cytoscape
-   `App Store<https://apps.cytoscape.org/>`_, then install as before: Apps >>
+   `App Store <https://apps.cytoscape.org/>`_, then install as before: Apps >>
    App Manager >> Install from File...
 
 .. note::

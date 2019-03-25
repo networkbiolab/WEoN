@@ -4,7 +4,8 @@ Installation
 First, be aware that WEoN runs a PERL script that filter out the regulations
 from the gold standard GRN. Please follow the specific instructions for your
 platform `here <https://www.perl.org/get.html>`_. Also, the app backend is in
-transition to python, so please also follow intructions to get python ``_.
+transition to python, so please also follow intructions to get python
+`here <https://www.python.org/about/gettingstarted/>`_.
 
 There are two different ways to install WEoN:
 

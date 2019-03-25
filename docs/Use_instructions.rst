@@ -1,4 +1,4 @@
-Instruction of Use
-==================
+Instructions to use WEoN
+========================
 
 TODO

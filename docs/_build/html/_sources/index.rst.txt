@@ -1,5 +1,5 @@
 Welcome to WEoN's documentation!
-===================================
+================================
 
 WEoN (Weighted Epigenomic Network) is a `Cytoscape`_ app that incorporates a
 filtering method to determine specific gene regulatory networks. The method uses

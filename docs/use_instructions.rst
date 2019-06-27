@@ -78,11 +78,11 @@ WEoN use RNA-Seq data to filter out absent transcription factors from a distance
 .. image:: images/marks.png
 	:align: center
 
-.. note::
-	We will improve the annotation of histone marks associating each mark to an
-	experimentally validated effect on specific DNA sequences like promoters. For
-	the current release of WEoN, the 3rd column don't interfere with the filtering
-	process.
+.. .. note::
+.. 	We will improve the annotation of histone marks associating each mark to an
+.. 	experimentally validated effect on specific DNA sequences like promoters. For
+.. 	the current release of WEoN, the 3rd column don't interfere with the filtering
+.. 	process.
 
 4. **Execute filtering**
 

@@ -23,14 +23,14 @@ WEoN use RNA-Seq data to filter out absent transcription factors from a distance
 2. **Required data**
 
    WEoN use RNA-seq data to filter out absent transcription factors and miRNAs
-   from the Gold Standard (or Reference Network). We provide three Gold Standards,
+   from the Reference GRN. We provide three References,
    which were constructed within a differente cutoff of 1500, 2000, and 5000
    nucleotides from the Transcription Start Site.
 
    Please select a two-column file separated by tabulations as an ``Expression File``.
    The first column is the gene name while the second is the expression in any
    unit, like counts, RPKM, or FPKM. WEoN use an internal dictionary to match gene
-   names from the Gold Standard and the Expression File. Data must be a single
+   names from the Reference Network and the Expression File. Data must be a single
    experiment or the average value of the experimental replication.
 
    We provide ``expression_test.tsv`` as an example ``Expression File``. Please
@@ -86,8 +86,8 @@ WEoN use RNA-Seq data to filter out absent transcription factors from a distance
 
 4. **Execute filtering**
 
-   Click on ``Run WEoN``, wait, and load the time/tissue specific GRN into Cytoscape
-   clicking on ``Create View``.
+   After all the data is loaded, please click on ``Run WEoN``, wait, and
+   It is important to note that when the job is finished, you need to click on ``Create View`` button to display the time/tissue specific GRN in Cytoscape.
 
 .. note::
 	Feel free to contact directly throught the `Github repository <https://github.com/networkbiolab/WEoN>`_

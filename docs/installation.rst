@@ -1,11 +1,14 @@
 Installation
 ============
 
-First, be aware that WEoN runs a PERL script that filter out regulations unlikely occurring
-from a gold standard GRN. Please follow the specific instructions for your
-platform `here <https://www.perl.org/get.html>`_. Also, the app backend is in
-transition to python, so please also follow intructions to get python3
-`here <https://www.python.org/about/gettingstarted/>`_.
+First, be aware that WEoN runs a PERL script that filter out regulations unlikely occurring from a Reference GRN. Please follow the specific instructions for your platform `here <https://www.perl.org/get.html>`_.
+.. Also, the app backend is in transition to python, so please also follow intructions to get python3 `here <https://www.python.org/about/gettingstarted/>`_.
+
+**Requeriments**
+
+- Java: Instructions to install Java depends on your operating system. Windows and MacOS users should download Java 8 from `Download_Java`_ and follow the installer instructions. For Unix users, Java could be installed from the repository packages `openjdk-8-jdk` and `openjdk-8-jre`.
+
+- Cytoscape: Download the Cytoscape software from `Download_Cytoscape`_. The webpage will automatically determine your operating system and prompt a download button.
 
 There are two different ways to obtain WEoN:
 
@@ -33,3 +36,7 @@ Please be aware you need a PERL interpreter to execute WEoN backend.
 	**Need Help?**
 	If you run into any problems with installation, please leave an issue in the
 	official `Github repository <https://github.com/networkbiolab/WEoN>`_.
+
+.. refs
+.. _Download_Cytoscape: https://cytoscape.org/download.html
+.. _Download_Java: https://www.java.com/es/download/manual.jsp

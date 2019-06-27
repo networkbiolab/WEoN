@@ -19,7 +19,7 @@ There are two different ways to obtain WEoN:
 1. **Download from the Figshare repository (With data, Recommended).** WEoN can be downloaded from `Figshare repository <https://figshare.com/articles/WEoN_install_zip/7913912>`_ along with example data. Then, within Cytoscape, go to: Apps >> App Manager >> Install from File...
 
 .. image:: images/Download.png
-	:align: center
+    :align: center
 
    *OR*
 
@@ -32,7 +32,7 @@ Once you have downloaded and uncompress WEoN, and the requirements are met, you 
 
 - Windows 10: double click on `install.bat` file and follow instructions. Or manually copy the uncompressed directory with data into any directory (e.g. `C:\users\your_user\Desktop`) and WEoN.jar into the `C:\Users\your_user\CytoscapeConfiguration\3\apps\installed` directory.
 
-- Ubuntu Linux: double click on `install.jar` and follow instructions. Or manually copy the uncompressed directory with data into any directory (e.g `/home/your_user/Desktop`) and WEoN.jar into `/home/your_user/CytoscapeConfiguration/3/apps/installed`
+- Unix (Ubuntu): double click on `install.jar` and follow instructions. Or manually copy the uncompressed directory with data into any directory (e.g `/home/your_user/Desktop`) and WEoN.jar into `/home/your_user/CytoscapeConfiguration/3/apps/installed`
 
 - MacOS: Copy the uncompressed directory with data into `/Users/your_user` and WEoN.jar into `/Users/your_user/CytoscapeConfiguration/3/apps/installed`
 

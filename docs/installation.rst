@@ -31,7 +31,7 @@ There are two different ways to obtain WEoN:
 
 Once you have downloaded and uncompress WEoN, and the requirements are met, you can install WEoN as follow
 
-- Windows 10: double click on `install.bat` file and follow instructions. Or manually copy the uncompressed directory with data into any directory (e.g. `C:\users\your_user\Desktop`) and WEoN.jar into the `C:\Users\your_user\CytoscapeConfiguration\3\apps\installed` directory.
+- Windows 10: double click on `install.bat` file and follow instructions. Or manually copy the uncompressed directory with data into any directory (e.g. `C:\\users\\your_user\\Desktop`) and WEoN.jar into the `C:\\Users\\your_user\\CytoscapeConfiguration\\3\apps\\installed` directory.
 
 - Unix (Ubuntu): double click on `install.jar` and follow instructions. Or manually copy the uncompressed directory with data into any directory (e.g `/home/your_user/Desktop`) and WEoN.jar into `/home/your_user/CytoscapeConfiguration/3/apps/installed`
 

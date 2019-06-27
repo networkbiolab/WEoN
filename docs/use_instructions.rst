@@ -7,10 +7,14 @@ then click on WEoN to open it.
 
 WEoN use RNA-Seq data to filter out absent transcription factors from a distance-based reference network in addition with other optional data as DNase, Histone Marks and Methylation. We currently applied the method to *Droshophila melanogaster* due to a specific histone marks code that was experimentally determined, although the code can be modified by the user. The example data can be downloaded from `data`_.
 
+0. **Open WEoN**
+
+   Within Cytoscape, go to: Apps >> WEoN - Weighted Epigenomic Network. This will display the user interface as shown in the figure.
+
 1. **Interface**
 
    The WEoN interface is a simple selector screen that serves as input screen for
-   the backend PERL scripts, therefore parsing correctly the genomic data and
+   the backend Perl scripts, therefore parsing correctly the genomic data and
    calling orderly the scripts to filter out unlikely ocurring regulations.
 
 .. image:: images/interface.png
@@ -70,6 +74,9 @@ WEoN use RNA-Seq data to filter out absent transcription factors from a distance
 		H3S10ph		+		promoter	...
 		H4K16ac		+		promoter	...
 		H4K20me3	-		promoter	...
+
+.. image:: images/marks.png
+	:align: center
 
 .. note::
 	We will improve the annotation of histone marks associating each mark to an

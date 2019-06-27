@@ -58,7 +58,7 @@
 
 
 \title{WEoN Documentation}
-\date{Apr 02, 2019}
+\date{Jun 27, 2019}
 \release{}
 \author{Rodrigo Santibáñez}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -74,24 +74,29 @@
 \phantomsection\label{\detokenize{index::doc}}
 
 
-WEoN (Weighted Epigenomic Network) is a \sphinxhref{https://cytoscape.org/}{Cytoscape} app that incorporates a
-filtering method to determine specific gene regulatory networks. The method uses
-histone modifications through CHIp-on-chip seq, gene expression through
-RNA-seq, and chromatin accesibility through DNase-seq to filter out known and
-inferred regulations (like Transcription factors and regulatory RNAs) from a
-Gene Regulatory Network (GRN) considered as a gold standard (e.g. a GRN with
-all known connections, regardless development stage or cell type).
-The corresponding specific GRN consider weighted information that can be further
-analyzed to validate the network.
+Weighted Epigenomic Network (WEoN) is a \sphinxhref{https://cytoscape.org/}{Cytoscape} app that incorporates a filtering method to determine context-specific gene regulatory networks. The method employs diverse data to filter out regulatory connections between genes. WEoN uses histone modifications through Chromatin Inmunoprecipitation followed by DNA sequencing (ChIP-seq), gene expression through RNA-seq, and chromatin accesibility through DNase-seq data. A serie of heuristic filters removes known and inferred regulations (like Transcription factors and regulatory RNAs) from a Gene Regulatory Network (GRN) considered as a Reference Network (e.g. a GRN with all known connections, regardless development stage or cell type). The corresponding context-specific GRN considers weighted information, and the generated network can be further analyzed within the \sphinxhref{https://cytoscape.org/}{Cytoscape} software.
+
+Please write directly to us (\sphinxhref{mailto:leandro.murgas@mayor.cl}{Leandro}, \sphinxhref{mailto:alberto.martin@umayor.cl}{Alberto}) or post an issue at \sphinxhref{https://github.com/networkbiolab/WEoN/issues}{Issues} if you encounter any problem.
 
 
 \chapter{Installation}
 \label{\detokenize{installation:installation}}\label{\detokenize{installation::doc}}
-First, be aware that WEoN runs a PERL script that filter out regulations unlikely occurring
-from a gold standard GRN. Please follow the specific instructions for your
-platform \sphinxhref{https://www.perl.org/get.html}{here}. Also, the app backend is in
-transition to python, so please also follow intructions to get python3
-\sphinxhref{https://www.python.org/about/gettingstarted/}{here}.
+First, be aware that WEoN runs a PERL script that filter out regulations unlikely occurring from a Reference GRN. Please follow the specific instructions for your platform \sphinxhref{https://www.perl.org/get.html}{here}.
+
+\sphinxstylestrong{Requeriments}
+\begin{itemize}
+\item {} 
+Java: Instructions to install Java depends on your operating system. Windows and MacOS users should download Java 8 from \sphinxhref{https://www.java.com/es/download/manual.jsp}{Download\_Java} and follow the installer instructions. For Unix users, Java could be installed from the repository packages \sphinxtitleref{openjdk-8-jdk} and \sphinxtitleref{openjdk-8-jre} (e.g. \sphinxtitleref{apt-get install openjdk-8-jdk openjdk-8-jre}).
+
+\item {} 
+Cytoscape: Download the Cytoscape software from \sphinxhref{https://cytoscape.org/download.html}{Download\_Cytoscape}. The webpage will automatically determine your operating system and prompt a download button.
+
+\item {} 
+Perl: Similarly to Java, Windows users should install a Perl interpreter. Please download from \sphinxhref{http://strawberryperl.com/}{Download\_Perl} and follow the instructions. For MacOS and Unix operating systems, Perl can be already installed; if not, the user can install it from the repository.
+
+\end{itemize}
+
+\sphinxstylestrong{Download WEoN}
 
 There are two different ways to obtain WEoN:
 \begin{enumerate}
@@ -99,28 +104,38 @@ There are two different ways to obtain WEoN:
 \def\labelenumi{\theenumi .}
 \makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
 \item {} 
-\sphinxstylestrong{Download from the Figshare repository (Recommended).} WEoN can be downloaded
-from \sphinxhref{https://figshare.com/articles/WEoN\_install\_zip/7913912}{Figshare repository}
-along with example data. Then, within Cytoscape, go to: Apps \textgreater{}\textgreater{} App Manager \textgreater{}\textgreater{} Install from File…
+\sphinxstylestrong{Download from the Figshare repository (With data, Recommended).} WEoN can be downloaded from \sphinxhref{https://figshare.com/articles/WEoN\_install\_zip/7913912}{Figshare repository} along with example data. Then, within Cytoscape, go to: Apps \textgreater{}\textgreater{} App Manager \textgreater{}\textgreater{} Install from File…
 
-\sphinxstyleemphasis{OR}
-
+\end{enumerate}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{1}
 \item {} 
-\sphinxstylestrong{Download from the Github repository.} If you are familiar
-with git, the \sphinxhref{https://github.com/networkbiolab/WEoN}{Github repository} can be cloned
-and the respective jar file installed from within Cytoscape: Apps \textgreater{}\textgreater{} App Manager \textgreater{}\textgreater{} Install from File…
+\sphinxstylestrong{Download from the Github repository (Without data).} If you are familiar
+with git, the \sphinxhref{https://github.com/networkbiolab/WEoN}{Github repository} can be cloned and the respective jar file installed from within Cytoscape: Apps \textgreater{}\textgreater{} App Manager \textgreater{}\textgreater{} Install from File…
 
 \end{enumerate}
 
-Additionally, please run \sphinxcode{\sphinxupquote{script.sh}} or copy the PERL scripts to
-\sphinxcode{\sphinxupquote{/home/\$USER/CytoscapeConfiguration/3/apps/installed}}
-(*UNIX), while similar paths exist in MacOS and Windows OS.
-Please be aware you need a PERL interpreter to execute WEoN backend.
+\sphinxstylestrong{Installation}
+
+Once you have downloaded and uncompress WEoN, and the requirements are met, you can install WEoN as follow
+\begin{itemize}
+\item {} 
+Windows 10: double click on \sphinxtitleref{install.bat} file and follow instructions. Or manually copy the uncompressed directory with data into any directory (e.g. \sphinxtitleref{C:usersyour\_userDesktop}) and WEoN.jar into the \sphinxtitleref{C:Usersyour\_userCytoscapeConfiguration3appsinstalled} directory.
+
+\item {} 
+Unix (Ubuntu): double click on \sphinxtitleref{install.jar} and follow instructions. Or manually copy the uncompressed directory with data into any directory (e.g \sphinxtitleref{/home/your\_user/Desktop}) and WEoN.jar into \sphinxtitleref{/home/your\_user/CytoscapeConfiguration/3/apps/installed}
+
+\item {} 
+MacOS: Copy the uncompressed directory with data into \sphinxtitleref{/Users/your\_user} and WEoN.jar into \sphinxtitleref{/Users/your\_user/CytoscapeConfiguration/3/apps/installed}
+
+\end{itemize}
 
 \begin{sphinxadmonition}{note}{Note:}
 \sphinxstylestrong{Downloading from the Cytoscape App Store.} We’ll upload WEoN to the Cytoscape
-\sphinxhref{https://apps.cytoscape.org/}{App Store} soon, where it could be downloaded. However,
-example data could only be obtained from the Figshare repository due to size limitations.
+\sphinxhref{https://apps.cytoscape.org/}{App Store} soon, where it could be downloaded. However, example data could only be obtained from the Figshare repository due to file size limitations.
 \end{sphinxadmonition}
 
 \begin{sphinxadmonition}{note}{Note:}
@@ -136,18 +151,22 @@ This document contains the principal instructions in order to use the Cytoscape
 app WEoN (Weighted Epigenetic Networks). To open WEoN, go to Cytoscape Apps menu,
 then click on WEoN to open it.
 
-We currently applied the method to \sphinxstyleemphasis{Droshophila melanogaster} due to a specific
-epigenetic code referred to the experimentally determined impact of post-
-traslational modifications on histones.
+WEoN use RNA-Seq data to filter out absent transcription factors from a distance-based reference network in addition with other optional data as DNase, Histone Marks and Methylation. We currently applied the method to \sphinxstyleemphasis{Droshophila melanogaster} due to a specific histone marks code that was experimentally determined, although the code can be modified by the user. The example data can be downloaded from \sphinxhref{https://figshare.com/articles/WEoN\_example\_Data/8330024}{data}.
 \begin{enumerate}
 \def\theenumi{\arabic{enumi}}
 \def\labelenumi{\theenumi .}
 \makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{-1}
+\item {} 
+\sphinxstylestrong{Open WEoN}
+
+Within Cytoscape, go to: Apps \textgreater{}\textgreater{} WEoN - Weighted Epigenomic Network. This will display the user interface as shown in the figure.
+
 \item {} 
 \sphinxstylestrong{Interface}
 
 The WEoN interface is a simple selector screen that serves as input screen for
-the backend PERL scripts, therefore parsing correctly the genomic data and
+the backend Perl scripts, therefore parsing correctly the genomic data and
 calling orderly the scripts to filter out unlikely ocurring regulations.
 
 \end{enumerate}
@@ -162,15 +181,15 @@ calling orderly the scripts to filter out unlikely ocurring regulations.
 \sphinxstylestrong{Required data}
 
 WEoN use RNA-seq data to filter out absent transcription factors and miRNAs
-from the Gold Standard (or Reference Network). We provide three Gold Standards,
+from the Reference GRN. We provide three References,
 which were constructed within a differente cutoff of 1500, 2000, and 5000
 nucleotides from the Transcription Start Site.
 
 Please select a two-column file separated by tabulations as an \sphinxcode{\sphinxupquote{Expression File}}.
 The first column is the gene name while the second is the expression in any
 unit, like counts, RPKM, or FPKM. WEoN use an internal dictionary to match gene
-names from the Gold Standard and the Expression File. Data must be a single
-experiment or the average value of the experimental replica.
+names from the Reference Network and the Expression File. Data must be a single
+experiment or the average value of the experimental replication.
 
 We provide \sphinxcode{\sphinxupquote{expression\_test.tsv}} as an example \sphinxcode{\sphinxupquote{Expression File}}. Please
 click on the corresponding \sphinxcode{\sphinxupquote{Select File}} button and navigated to the containing
@@ -224,12 +243,7 @@ H4K20me3        \PYGZhy{}               promoter        ...
 
 \end{enumerate}
 
-\begin{sphinxadmonition}{note}{Note:}
-We will improve the annotation of histone marks associating each mark to an
-experimentally validated effect on specific DNA sequences like promoters. For
-the current release of WEoN, the 3rd column don’t interfere with the filtering
-process.
-\end{sphinxadmonition}
+\noindent{\hspace*{\fill}\sphinxincludegraphics{{marks}.png}\hspace*{\fill}}
 \begin{enumerate}
 \def\theenumi{\arabic{enumi}}
 \def\labelenumi{\theenumi .}
@@ -238,8 +252,8 @@ process.
 \item {} 
 \sphinxstylestrong{Execute filtering}
 
-Click on \sphinxcode{\sphinxupquote{Run WEoN}}, wait, and load the time/tissue specific GRN into Cytoscape
-clicking on \sphinxcode{\sphinxupquote{Create View}}.
+After all the data is loaded, please click on \sphinxcode{\sphinxupquote{Run WEoN}}, wait, and
+It is important to note that when the job is finished, you need to click on \sphinxcode{\sphinxupquote{Create View}} button to display the time/tissue specific GRN in Cytoscape.
 
 \end{enumerate}
 

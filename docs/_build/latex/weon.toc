@@ -1,4 +1,4 @@
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Installation}{3}{chapter.1}
 \contentsline {chapter}{\numberline {2}Instructions to use WEoN}{5}{chapter.2}
-\contentsline {chapter}{\numberline {3}Indices and tables}{9}{chapter.3}
+\contentsline {chapter}{\numberline {3}Indices and tables}{11}{chapter.3}

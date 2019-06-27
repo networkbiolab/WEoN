@@ -21,7 +21,7 @@
 
 project = u'WEoN'
 copyright = u'2019, Network Biology Lab'
-author = u'Rodrigo Santibáñez'
+author = u'Network Biology Lab'
 
 # The short X.Y version
 version = u''

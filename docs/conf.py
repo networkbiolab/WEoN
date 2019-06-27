@@ -139,7 +139,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'weon.tex', u'WEoN Documentation',
-     u'Rodrigo Santibáñez', 'manual'),
+     u'Network Biology Lab', 'manual'),
 ]
 
 
@@ -160,7 +160,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'weon', u'WEoN Documentation',
-     author, 'Rodrigo Santibáñez', 'Inference method for Weighted Epigenomic' \
+     author, 'Network Biology Lab', 'Inference method for Weighted Epigenomic' \
 ' Networks.',
      'Miscellaneous'),
 ]

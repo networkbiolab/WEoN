@@ -22,10 +22,10 @@ There are two different ways to obtain WEoN:
 .. image:: images/download.png
 	:align: center
 
-..    *OR*
-..
-.. 2. **Download from the Github repository (Without data).** If you are familiar
-..    with git, the `Github repository <https://github.com/networkbiolab/WEoN>`_ can be cloned and the respective jar file installed from within Cytoscape: Apps >> App Manager >> Install from File...
+   *OR*
+
+2. **Download from the Github repository (Without data).** If you are familiar
+   with git, the `Github repository <https://github.com/networkbiolab/WEoN>`_ can be cloned and the respective jar file installed from within Cytoscape: Apps >> App Manager >> Install from File...
 
 **Installation**
 

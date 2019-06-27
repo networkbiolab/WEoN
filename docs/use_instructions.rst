@@ -5,9 +5,7 @@ This document contains the principal instructions in order to use the Cytoscape
 app WEoN (Weighted Epigenetic Networks). To open WEoN, go to Cytoscape Apps menu,
 then click on WEoN to open it.
 
-We currently applied the method to *Droshophila melanogaster* due to a specific
-epigenetic code referred to the experimentally determined impact of post-
-traslational modifications on histones.
+WEoN use RNA-Seq data to filter out absent transcription factors from a distance-based reference network in addition with other optional data as DNase, Histone Marks and Methylation. We currently applied the method to *Droshophila melanogaster* due to a specific histone marks code that was experimentally determined, although the code can be modified by the user. The example data can be downloaded from `data`_.
 
 1. **Interface**
 
@@ -29,7 +27,7 @@ traslational modifications on histones.
    The first column is the gene name while the second is the expression in any
    unit, like counts, RPKM, or FPKM. WEoN use an internal dictionary to match gene
    names from the Gold Standard and the Expression File. Data must be a single
-   experiment or the average value of the experimental replica.
+   experiment or the average value of the experimental replication.
 
    We provide ``expression_test.tsv`` as an example ``Expression File``. Please
    click on the corresponding ``Select File`` button and navigated to the containing
@@ -87,3 +85,6 @@ traslational modifications on histones.
 .. note::
 	Feel free to contact directly throught the `Github repository <https://github.com/networkbiolab/WEoN>`_
 	or to Dr. Alberto Martin's `e-mail <amartin@umayor.cl>`_.
+
+.. refs
+.. _data: https://figshare.com/articles/WEoN_example_Data/8330024

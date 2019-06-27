@@ -14,17 +14,18 @@ First, be aware that WEoN runs a PERL script that filter out regulations unlikel
 - Perl: Similarly to Java, Windows users should install a Perl interpreter. Please download from `Download_Perl`_ and follow the instructions. For MacOS and Unix operating systems, Perl can be already installed; if not, user can install it from the repository.
 
 **Download WEoN**
+
 There are two different ways to obtain WEoN:
 
 1. **Download from the Figshare repository (With data, Recommended).** WEoN can be downloaded from `Figshare repository <https://figshare.com/articles/WEoN_install_zip/7913912>`_ along with example data. Then, within Cytoscape, go to: Apps >> App Manager >> Install from File...
 
 .. image:: images/Download.png
-    :align: center
+	:align: center
 
-   *OR*
-
-2. **Download from the Github repository (Without data).** If you are familiar
-   with git, the `Github repository <https://github.com/networkbiolab/WEoN>`_ can be cloned and the respective jar file installed from within Cytoscape: Apps >> App Manager >> Install from File...
+..    *OR*
+..
+.. 2. **Download from the Github repository (Without data).** If you are familiar
+..    with git, the `Github repository <https://github.com/networkbiolab/WEoN>`_ can be cloned and the respective jar file installed from within Cytoscape: Apps >> App Manager >> Install from File...
 
 **Installation**
 

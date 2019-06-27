@@ -15,8 +15,10 @@ First, be aware that WEoN runs a PERL script that filter out regulations unlikel
 **Download WEoN**
 There are two different ways to obtain WEoN:
 
-1. **Download from the Figshare repository (With data, Recommended).** WEoN can be downloaded
-   from `Figshare repository <https://figshare.com/articles/WEoN_install_zip/7913912>`_ along with example data. Then, within Cytoscape, go to: Apps >> App Manager >> Install from File...
+1. **Download from the Figshare repository (With data, Recommended).** WEoN can be downloaded from `Figshare repository <https://figshare.com/articles/WEoN_install_zip/7913912>`_ along with example data. Then, within Cytoscape, go to: Apps >> App Manager >> Install from File...
+
+.. image:: images/Download.png
+	:align: center
 
    *OR*
 

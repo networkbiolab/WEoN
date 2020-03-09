@@ -32,23 +32,15 @@ As WEoN FlyT can be used in several operating systems (Linux, Windows and mac) y
 
 **Installation**
 
+With the corresponding file for your OS, and the requirements are met, you need to unzip it and a set of files will be generated, among them we found WEoN_FlyT folder, which is the core of WEoN FlyT, and WEoN_FlyT.jar file, corresponding to the cytoscape app.
+
+- **WEoN_FlyT folder:** You need to move this file to /Users/your_username in **mac**, to C: in **Windows** and /home/your_username in **Linux** environments.
 
 .. note::
-	**Additional files for Windows users**
-	In some systems, copying WEoN FlyT folder must need for admin permissions, for this case we iclude an **installation.bat** file, which automatically will ask for these permissions and then will generate a copy of the folder in C:
+	**Additional files for Windows users:**
+	In some systems, copying WEoN FlyT folder must need for admin permissions, for this case we include an **installation.bat** file, which automatically will ask for these permissions and then will generate a copy of the folder in C:
 
-long with example data. Then, within Cytoscape, go to: Apps >> App Manager >> Install from File...
-
-
-Once you have downloaded and uncompress WEoN, and the requirements are met, you can install WEoN as follow
-
-- Windows 10: double click on `install.bat` file and follow instructions. Or manually copy the uncompressed directory with data into any directory (e.g. `C:\\users\\your_user\\Desktop`) and WEoN.jar into the `C:\\Users\\your_user\\CytoscapeConfiguration\\3\apps\\installed` directory.
-
-- Unix (Ubuntu): double click on `install.jar` and follow instructions. Or manually copy the uncompressed directory with data into any directory (e.g `/home/your_user/Desktop`) and WEoN.jar into `/home/your_user/CytoscapeConfiguration/3/apps/installed`
-
-- MacOS: Copy the uncompressed directory with data into `/Users/your_user` and WEoN.jar into `/Users/your_user/CytoscapeConfiguration/3/apps/installed`
-
-.. Additionally, please run ``script.sh`` or copy the PERL scripts to  ``/home/$USER/CytoscapeConfiguration/3/apps/installed`` (\*UNIX), while similar paths exist in MacOS and Windows OS. Please be aware you need a PERL interpreter to execute WEoN backend.
+- **WEoN_FlyT.jar file:** In order to install the Cytoscape app, you need to open cytoscape and then navigate to Apps menu >> App Manager >> Install from File. Here you need to navigate to the jar file and select it and now it is done.
 
 
 .. note::

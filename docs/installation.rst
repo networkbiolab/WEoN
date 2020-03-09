@@ -45,9 +45,6 @@ Once you have downloaded and uncompress WEoN, and the requirements are met, you 
 
 .. Additionally, please run ``script.sh`` or copy the PERL scripts to  ``/home/$USER/CytoscapeConfiguration/3/apps/installed`` (\*UNIX), while similar paths exist in MacOS and Windows OS. Please be aware you need a PERL interpreter to execute WEoN backend.
 
-.. note::
-	**Downloading from the Cytoscape App Store.** We'll upload WEoN to the Cytoscape
-	`App Store <https://apps.cytoscape.org/>`_ soon, where it could be downloaded. However, example data could only be obtained from the Figshare repository due to file size limitations.
 
 .. note::
 	**Need Help?**

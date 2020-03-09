@@ -15,21 +15,18 @@ First, be aware that WEoN FlyT runs a PERL script that filter out regulations un
 
 **Getting WEoN FlyT**
 
-You can Download WEoN FlyT from **Figshare** clicking in the download button as shown in the image.
+You can Download WEoN FlyT from **Figshare** cliking in the **download button** as shown in the image.
 
 .. image:: images/download.png
 	:align: center
 
 As WEoN FlyT can be used in several operating systems (Linux, Windows and mac) you need to download you current version as listed as follow.
 
-- WEoN FlyT for Linux `download here <https://figshare.com/articles/WEoN_FlyT_for_Linux/11956758>`_ a
+- WEoN FlyT for Linux `download here <https://figshare.com/articles/WEoN_FlyT_for_Linux/11956758>`_ 
 
-- WEoN FlyT for Windows `download here <https://figshare.com/articles/WEoN_FlyT_for_windows/11958972>`_ a
+- WEoN FlyT for Windows `download here <https://figshare.com/articles/WEoN_FlyT_for_windows/11958972>`_ 
 
-- WEoN FlyT for Mac `download here <https://figshare.com/articles/WEoN_FlyT_for_mac/11958942>`_ a
-
-
-
+- WEoN FlyT for Mac `download here <https://figshare.com/articles/WEoN_FlyT_for_mac/11958942>`_ 
 
 
 

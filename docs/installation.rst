@@ -32,6 +32,11 @@ As WEoN FlyT can be used in several operating systems (Linux, Windows and mac) y
 
 **Installation**
 
+
+.. note::
+	**Additional files for Windows users**
+	In some systems, copying WEoN FlyT folder must need for admin permissions, for this case we iclude an **installation.bat** file, which automatically will ask for these permissions and then will generate a copy of the folder in C:
+
 long with example data. Then, within Cytoscape, go to: Apps >> App Manager >> Install from File...
 
 

@@ -1,7 +1,7 @@
 Installation
 ============
 
-First, be aware that WEoN runs a PERL script that filter out regulations unlikely occurring from a Reference GRN. Please follow the specific instructions for your platform `here <https://www.perl.org/get.html>`_.
+First, be aware that WEoN FlyT runs a PERL script that filter out regulations unlikely occurring from a Reference GRN. Please follow the specific instructions for your platform `here <https://www.perl.org/get.html>`_.
 
 .. Also, the app backend is in transition to python, so please also follow intructions to get python3 `here <https://www.python.org/about/gettingstarted/>`_.
 
@@ -13,21 +13,30 @@ First, be aware that WEoN runs a PERL script that filter out regulations unlikel
 
 - Perl: Similarly to Java, Windows users should install a Perl interpreter. Please download from `Download_Perl`_ and follow the instructions. For MacOS and Unix operating systems, Perl can be already installed; if not, the user can install it from the repository.
 
-**Download WEoN**
+**Getting WEoN FlyT**
 
-There are two different ways to obtain WEoN:
-
-1. **Download from the Figshare repository (With data, Recommended).** WEoN can be downloaded from `Figshare repository <https://figshare.com/articles/WEoN_install_zip/7913912>`_ along with example data. Then, within Cytoscape, go to: Apps >> App Manager >> Install from File...
+You can Download WEoN FlyT from **Figshare** clicking in the download button as shown in the image.
 
 .. image:: images/download.png
 	:align: center
 
-*OR*
+As WEoN FlyT can be used in several operating systems (Linux, Windows and mac) you need to download you current version as listed as follow.
 
-2. **Download from the Github repository (Without data).** If you are familiar
-   with git, the `Github repository <https://github.com/networkbiolab/WEoN>`_ can be cloned and the respective jar file installed from within Cytoscape: Apps >> App Manager >> Install from File...
+- WEoN FlyT for Linux `download here <https://figshare.com/articles/WEoN_FlyT_for_Linux/11956758>`_ a
+
+- WEoN FlyT for Windows `download here <https://figshare.com/articles/WEoN_FlyT_for_windows/11958972>`_ a
+
+- WEoN FlyT for Mac `download here <https://figshare.com/articles/WEoN_FlyT_for_mac/11958942>`_ a
+
+
+
+
+
 
 **Installation**
+
+long with example data. Then, within Cytoscape, go to: Apps >> App Manager >> Install from File...
+
 
 Once you have downloaded and uncompress WEoN, and the requirements are met, you can install WEoN as follow
 

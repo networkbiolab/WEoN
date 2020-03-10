@@ -2,34 +2,26 @@ Instructions to use WEoN
 ========================
 
 This document contains the principal instructions in order to use the Cytoscape
-app WEoN (Weighted Epigenetic Networks). To open WEoN, go to Cytoscape Apps menu,
-then click on WEoN to open it.
-
-WEoN use RNA-Seq data to filter out absent transcription factors from a distance-based reference network in addition with other optional data as DNase, Histone Marks and Methylation. We currently applied the method to *Droshophila melanogaster* due to a specific histone marks code that was experimentally determined, although the code can be modified by the user. The example data can be downloaded from `data`_.
+app **WEoN FlyT (Weighted Epigenetic Networks: Fly Tool)**. 
 
 0. **Open WEoN**
 
-   Within Cytoscape, go to: Apps >> WEoN - Weighted Epigenomic Network. This will display the user interface as shown in the figure.
+   Within Cytoscape, go to: Apps >> WEoN FlyT - Weighted Epigenomic Network: Fly Tool. This will display the user interface as shown in the figure.
 
 1. **Interface**
 
-   The WEoN interface is a simple selector screen that serves as input screen for
-   the backend Perl scripts, therefore parsing correctly the genomic data and
-   calling orderly the scripts to filter out unlikely ocurring regulations.
+The WEoN FlyT interface is a simple selector screen that serves as input screen. In the backend, WEoN FlyT run under Perl scripts, therefore parsing correctly the genomic data and calling orderly the scripts to filter out unlikely ocurring regulations.
 
 .. image:: images/interface.png
 	:align: center
 
 2. **Required data**
 
-   WEoN use RNA-seq data to filter out absent transcription factors and miRNAs
-   from the Reference GRN. We provide three References,
-   which were constructed within a differente cutoff of 1500, 2000, and 5000
-   nucleotides from the Transcription Start Site.
+WEoN FlyT use RNA-seq data to filter out absent transcription factors and miRNAs from the Reference Gene Regulatory Network (GRN). We provide three References,which were constructed within a differente cutoff of 1500, 2000, and 5000 nucleotides from the Transcription Start Site of the Drosophila melanogaster genome.
 
    Please select a two-column file separated by tabulations as an ``Expression File``.
    The first column is the gene name while the second is the expression in any
-   unit, like counts, RPKM, or FPKM. WEoN use an internal dictionary to match gene
+   unit, like counts, RPKM, or FPKM. WEoN FlyT use an internal dictionary to match gene
    names from the Reference Network and the Expression File. Data must be a single
    experiment or the average value of the experimental replication.
 
@@ -86,12 +78,10 @@ WEoN use RNA-Seq data to filter out absent transcription factors from a distance
 
 4. **Execute filtering**
 
-   After all the data is loaded, please click on ``Run WEoN``, wait, and
+   After all the data is loaded, please click on ``Run WEoN FlyT``, wait, and
    It is important to note that when the job is finished, you need to click on ``Create View`` button to display the time/tissue specific GRN in Cytoscape.
 
 .. note::
 	Feel free to contact directly throught the `Github repository <https://github.com/networkbiolab/WEoN>`_
 	or to Dr. Alberto Martin's `e-mail <amartin@umayor.cl>`_.
 
-.. refs
-.. _data: https://figshare.com/articles/WEoN_example_Data/8330024

@@ -15,12 +15,7 @@ First, be aware that WEoN FlyT runs a PERL script that filter out regulations un
 
 **Getting WEoN FlyT**
 
-You can Download WEoN FlyT from **Figshare** cliking in the **download button** as shown in the image.
-
-.. image:: images/download.png
-	:align: center
-
-As WEoN FlyT can be used in several operating systems (Linux, Windows and mac) you need to download you current version as listed as follow.
+WEoN Fly is freely available to download from **Figshare**. As WEoN FlyT can be used in several operating systems (Linux, Windows and mac) you need to download you current version a from s listed as follow.
 
 - WEoN FlyT for Linux `download here <https://figshare.com/articles/WEoN_FlyT_for_Linux/11956758>`_ 
 
@@ -28,11 +23,18 @@ As WEoN FlyT can be used in several operating systems (Linux, Windows and mac) y
 
 - WEoN FlyT for Mac `download here <https://figshare.com/articles/WEoN_FlyT_for_mac/11958942>`_ 
 
+To download WEoN FlyT, once you are in the download page, you can get it cliking in the **download button** as shown in the image.
+
+.. image:: images/download.png
+	:align: center
+
 
 
 **Installation**
 
-With the corresponding file for your OS, and the requirements are met, you need to unzip it and a set of files will be generated, among them we found WEoN_FlyT folder, which is the core of WEoN FlyT, and WEoN_FlyT.jar file, corresponding to the cytoscape app.
+With the corresponding file for your OS, and the requirements are met, you need to unzip it. After this process is complete you now have a set of files/folders as WEoN_FlyT folder, which is the core of WEoN FlyT, and WEoN_FlyT.jar file, corresponding to the cytoscape app.
+
+In order to install the prograam you need to do it:
 
 - **WEoN_FlyT folder:** You need to move this file to /Users/your_username in **mac**, to C: in **Windows** and /home/your_username in **Linux** environments.
 

@@ -52,7 +52,7 @@ Clicking on the install from file button a new window will appear, where you nee
 .. image:: images/selec_file2.png
 	:align: center
 
-After selecting the jar file a new window appear as shown in the next image. 
+After selecting the jar file a new window appear as shown in the next image, so clicking the close button all the process is done. 
 
 .. image:: images/select_file3.png
 	:align: center

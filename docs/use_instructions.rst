@@ -56,7 +56,7 @@ After all the data is loaded, please click on ``Run WEoN FlyT`` and when all pro
 	It's important to remark that this proces can take a very long time depending on your machine characteristics and files provided to WEoN FlyT (with more information/data, more time will take to compute all the information). Please be patinet
 
 
-4. **Output Files**
+5. **Output Files**
 
 Additionally, a set of files are created after executing WEoN FlyT and are located in the folder selected as output in the main window of the app. These files are described as follow:
 

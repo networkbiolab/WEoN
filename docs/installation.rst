@@ -32,18 +32,32 @@ To download WEoN FlyT, once you are in the download page, you can get it cliking
 
 **Installation**
 
-With the corresponding file for your OS, and the requirements are met, you need to unzip it. After this process is complete you now have a set of files/folders as WEoN_FlyT folder, which is the core of WEoN FlyT, and WEoN_FlyT.jar file, corresponding to the cytoscape app.
+With the corresponding file for your OS, and the requirements are met, you need to unzip it. After this process is complete you now have a folder containing another folder called WEoN_FlyT, which correspond to the core of WEoN FlyT, and WEoN_FlyT.jar file, corresponding to the cytoscape app, a visual interface that allows to Cytoscape interact with WEoN FlyT.
 
-In order to install the prograam you need to do it:
+In order to install the prograam you need to do the following steps for the main folder and for the cytoscape app:
 
-- **WEoN_FlyT folder:** You need to move this file to /Users/your_username in **mac**, to C: in **Windows** and /home/your_username in **Linux** environments.
+- **WEoN_FlyT main folder:** You need to move the WEoN_FlyT folder to /Users/your_username in **mac**, to C: in **Windows** and /home/your_username in **Linux** environments.
 
 .. note::
 	**Additional files for Windows users:**
 	In some systems, copying WEoN FlyT folder must need for admin permissions, for this case we include an **installation.bat** file, which automatically will ask for these permissions and then will generate a copy of the folder in C:
 
-- **WEoN_FlyT.jar file:** In order to install the Cytoscape app, you need to open cytoscape and then navigate to Apps menu >> App Manager >> Install from File. Here you need to navigate to the jar file and select it and now it is done.
+- **WEoN_FlyT.jar file:** In order to install the Cytoscape app, you need to open cytoscape and then navigate to Apps menu >> App Manager >> Install from File as pointed with a red arrow in the next image.
 
+.. image:: images/select_file.png
+	:align: center
+
+Clicking on the install from file button a new window will appear, where you need to navigate to the jar file and select it as shown in the next image 
+
+.. image:: images/select_file2.png
+	:align: center
+
+After selecting the jar file a new window appear as shown in the next image. 
+
+.. image:: images/select_file2.png
+	:align: center
+
+Now you only need to go to the Apps menu >> WEoN FlyT to start to use WEoN FlyT
 
 .. note::
 	**Need Help?**

@@ -1,10 +1,10 @@
-Instructions to use WEoN
-========================
+Instructions to use WEoN FlyT
+=============================
 
 This document contains the principal instructions in order to use the Cytoscape
 app **WEoN FlyT (Weighted Epigenetic Networks: Fly Tool)**. 
 
-0. **Open WEoN**
+0. **Open WEoN FlyT**
 
    Within Cytoscape, go to: Apps >> WEoN FlyT - Weighted Epigenomic Network: Fly Tool. This will display the user interface as shown in the figure.
 
@@ -14,6 +14,12 @@ The WEoN FlyT interface is a simple selector screen that serves as input screen.
 
 .. image:: images/interface.png
 	:align: center
+
+.. note::
+.. 	We will improve the annotation of histone marks associating each mark to an
+.. 	experimentally validated effect on specific DNA sequences like promoters. For
+.. 	the current release of WEoN, the 3rd column don't interfere with the filtering
+.. 	process.
 
 2. **Required data**
 
@@ -31,9 +37,8 @@ WEoN FlyT use RNA-seq data to filter out absent transcription factors and miRNAs
    button: click on and navigate.
 
 .. note::
-	The resulting Gene Regulatory Network will be stored at the user selected path
-	from the ``Select Folder`` button. Although, the GRN will be loaded automatically
-	when WEoN finish the filtering processes, the user can reuse the GRN.
+	Mac users has reported that the network definition selector did not shown correctly, but this selector is still here, you only need to click in this ``blank space`` and the menu will be displayed to select other reference network
+
 
 3. **Optional data**
 

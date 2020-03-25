@@ -54,7 +54,7 @@ Clicking on the install from file button a new window will appear, where you nee
 
 After selecting the jar file a new window appear as shown in the next image. 
 
-.. image:: images/select_file2.png
+.. image:: images/select_file3.png
 	:align: center
 
 Now you only need to go to the Apps menu >> WEoN FlyT to start to use WEoN FlyT

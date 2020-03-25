@@ -47,12 +47,12 @@ In order to install the prograam you need to do the following steps for the main
 .. image:: images/select_file.png
 	:align: center
 
-Clicking on the install from file button a new window will appear, where you need to navigate to the jar file and select it as shown in the next image 
+Clicking on the ``install from file`` button a new window will appear, where you need to navigate to the jar file and select it as shown in the next image 
 
 .. image:: images/selec_file2.png
 	:align: center
 
-After selecting the jar file a new window appear as shown in the next image, so clicking the close button all the process is done. 
+After selecting the jar file a new window appear as shown in the next image, so clicking the ``close`` button all the process is done. 
 
 .. image:: images/select_file3.png
 	:align: center

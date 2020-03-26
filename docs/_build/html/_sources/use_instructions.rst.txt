@@ -1,89 +1,85 @@
-Instructions to use WEoN
-========================
+Instructions to use WEoN FlyT
+=============================
 
-This document contains the principal instructions in order to use the Cytoscape
-app WEoN (Weighted Epigenetic Networks). To open WEoN, go to Cytoscape Apps menu,
-then click on WEoN to open it.
+This document contains the main instructions in order to use the **WEoN FlyT (Weighted Epigenetic Networks: Fly Tool)** Cytoscape app.
 
-We currently applied the method to *Droshophila melanogaster* due to a specific
-epigenetic code referred to the experimentally determined impact of post-
-traslational modifications on histones.
+1. **Open the WEoN FlyT app**
 
-1. **Interface**
+Within Cytoscape, go to Apps >> WEoN FlyT - Weighted Epigenomic Network: Fly Tool. This will display the user interface as shown in the figure.
 
-   The WEoN interface is a simple selector screen that serves as input screen for
-   the backend PERL scripts, therefore parsing correctly the genomic data and
-   calling orderly the scripts to filter out unlikely ocurring regulations.
+2. **Interface**
+
+The WEoN FlyT interface is an input screen where the user complete required and optional data. In the backend, WEoN FlyT executes Perl scripts, therefore parsing correctly the data to arguments and call orderly the scripts to filter out unlikely ocurring gene regulations from a reference gene regulatory network.
 
 .. image:: images/interface.png
 	:align: center
 
-2. **Required data**
+.. note::
+	There is a known issue occurring in MacOS. Users has reported that the *Network Definition* selector is not shown. However, the selector is still there; you only need to click on in this *blank space* and the menu will be displayed to select a network definition.
 
-   WEoN use RNA-seq data to filter out absent transcription factors and miRNAs
-   from the Gold Standard (or Reference Network). We provide three Gold Standards,
-   which were constructed within a differente cutoff of 1500, 2000, and 5000
-   nucleotides from the Transcription Start Site.
+.. .. note::
+.. .. 	We will improve the annotation of histone marks associating each mark to an
+.. .. 	experimentally validated effect on specific DNA sequences like promoters. For
+.. .. 	the current release of WEoN, the 3rd column don't interfere with the filtering
+.. .. 	process.
 
-   Please select a two-column file separated by tabulations as an ``Expression File``.
-   The first column is the gene name while the second is the expression in any
-   unit, like counts, RPKM, or FPKM. WEoN use an internal dictionary to match gene
-   names from the Gold Standard and the Expression File. Data must be a single
-   experiment or the average value of the experimental replica.
+- **Required data**
 
-   We provide ``expression_test.tsv`` as an example ``Expression File``. Please
-   click on the corresponding ``Select File`` button and navigated to the containing
-   folder. Also, provide a path (with write permission) from the ``Select Folder``
-   button: click on and navigate.
+In order to use WEoN FlyT, you need to provide at least three required data as listed as follow:
+
+	1. **Network Definition**: This field corresponds to the reference GRN to which apply filters to generate the weighted GRN. We provide three references networks, which were constructed within a different cut-off of 1500, 2000, and 5000 nucleotides: if a Transcription Factor Binding Site or other regulatory element is contained in the cut-off upstream the Transcription Start Site of Drosophila melanogaster genes, then the GRN defines a connection between gene and regulator.
+
+	2. **Expression File**: WEoN FlyT employs RNA-seq data to filter out absent transcription factors and miRNAs from the Reference GRN. The RNA-seq data must be provided formatted in a two-columns file separated by tabulations. The first column is the gene name while the second is the expression of the corresponding gene. Expression could be reported as read counts, reads per kilobase million (RPKM) or fragments per kilobase million (FPKM). Data must be a single experiment or the average value of the experimental replication.
+
+	.. 	WEoN FlyT use an internal dictionary to match gene names from the Reference Network and the Expression File. ES NECESARIO?
+
+	3. **Result folder**: A folder where results will be placed.
+
+- **Optional data**
+
+If you have data from DNase, Histone modifications and/or methylation experiments, you can use it to complement RNA-seq data and get a more specific Gene Regulation Network.
+
+So, for the ``DNase file`` and ``Methylation file`` fields, you need to provide four-columns files separated by tabulations. Each column correspond, in order, to the chromosome, the initial coordinate, the ending coordinate, and the score for the mapped feature. Both files has an associated ``Score`` field used as a threshold value to dismiss lower score values from the original data. Default is zero, which means that all mapped features in the DNase and Methylation files will be used in the filtering process.
+
+Respect to the ``Histone Mark Path Files`` button, once you click it a new window will appear as shown in the next image, so in this new window you can select files for the corresponding post-translational modification of histone tails. Each data must be a three-columns files separated by tabulations, where each column correspond to the chromosome, the initial coordinate, and the ending coordinate of the mapped feature.
+
+.. image:: images/marks.png
+	:align: center
+
+3. **Execute filtering and visualization of results**
+
+After all data is selected, please click on ``Run WEoN FlyT``. The weighted GRN will be loaded in Cytoscape with the ``Create View`` button to display the time and/or tissue specific GRN.
 
 .. note::
-	The resulting Gene Regulatory Network will be stored at the user selected path
-	from the ``Select Folder`` button. Although, the GRN will be loaded automatically
-	when WEoN finish the filtering processes, the user can reuse the GRN.
+	It is important to remark that the filtering process could take a long time depending on your machine hardware and the number of files and information on them provided to WEoN FlyT. Please be patient.
 
-3. **Optional data**
+4. **Details of the Output Files**
 
-   ``DNase file`` and ``Methylation file`` are four-columns files separated by
-   tabulations. Each column correspond, in order, to the chromosome where was mapped
-   the sequence, the initial coordinate, the ending coordinate, and the score for
-   the mapped feature. Both files has an associated ``Score`` block which the user
-   can use a threshold value where all lower scores are dismissed. Default is zero,
-   meaning all mapped features in the ``DNase`` and ``Methylation`` files will
-   be used in the filtering process.
+A set of files are created after executing WEoN FlyT, which are located in the folder selected as output. These files are described as follow:
 
-   The ``Histone Mark Path Files`` allows the introduction of a single file that
-   determine the absolute path to ChIP-seq experiments for each histone post-
-   tranlational modification. The file is a four-column text as follow:
+- *output_filter_PTMs.txt*: A file describing information about chromosome, id of the coding gene for the transcription factor (TF), starting coordinate of the transcription factor binding site (TFBS), ending coordinate of the TFBS, name of the post-translational modification (PTM) of histone tails (histone marks), starting coordinate of the PTM, ending coordinate of the PTM, open or closed chromatin state (represented as + or -) and place where the PTM was found (on the promotor region, P, or on the gene, G)
 
-   .. code-block:: bash
+- *output_connect.txt*: A file describing information about PTMs. In the first column is the connection in the Gene Regulatory Network (GRN) and the second has info about PTM and the number of times that PTM was found and affecting the connection.
 
-		mark		state	annotation	location
-		H3K27me3	-		promoter	/absolute/path/to/example_data/H3K27me3_0-4hr.bed
-		H3K27ac		+		promoter	...
-		H3K36me2	+		promoter	...
-		H3K36me3	+		promoter	...
-		H3K4me1		+		promoter	...
-		H3K4me2		+		promoter	...
-		H3K4me3		+		promoter	...
-		H3K79me2	+		promoter	...
-		H3K9ac		+		promoter	...
-		H3K9me2		+		promoter	...
-		H3K9me3		+		promoter	...
-		H3S10ph		+		promoter	...
-		H4K16ac		+		promoter	...
-		H4K20me3	-		promoter	...
+- *output_connection_analysis.txt*: A file describing all PTMs affecting the binding of a TF.
+
+- *output_regulator_express.tsv*: A file describing connections from expressed regulators to genes.
+
+- *output_regulator_no_express.tsv*: A file describing connections from non-expressed regulators to genes.
+
+- *output_mirna_express.tsv*: A file describing connections from expressed miRNAs to genes.
+
+- *output_mirna_no_express.tsv*: A file describing connections from non-expressed miRNAs to genes.
+
+- *out_TFBS_network.tsv*: A copy of the reference GRN used as input.
+
+- *specific_GRN.tsv*: A file that merge *output_regulator_express.tsv* and *output_mirna_express.tsv* results.
+
+- *scored_GRN.tsv*: Same as *specific_GRN.tsv*, except for this file include information about the calculated score of the connection. This score is based on a set of filters (based on Expression, DNase, histone marks, and Methylation) indicating the evidence for the regulatory interaction. Importantly to note is that the scale for the evidence score go from one to five (only if all four types of experiments were provided by the user).
 
 .. note::
-	We will improve the annotation of histone marks associating each mark to an
-	experimentally validated effect on specific DNA sequences like promoters. For
-	the current release of WEoN, the 3rd column don't interfere with the filtering
-	process.
-
-4. **Execute filtering**
-
-   Click on ``Run WEoN``, wait, and load the time/tissue specific GRN into Cytoscape
-   clicking on ``Create View``.
+	If you close Cytoscape and need to visualize again the weighted GRN, please import the **specific_GRN.tsv** or **scored_GRN.tsv** into Cytoscape.
 
 .. note::
 	Feel free to contact directly throught the `Github repository <https://github.com/networkbiolab/WEoN>`_
-	or to Dr. Alberto Martin's `e-mail <amartin@umayor.cl>`_.
+	or to Dr. Alberto Martin's `e-mail <alberto.martin@umayor.cl>`_.

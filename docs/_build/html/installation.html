@@ -21,10 +21,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Instructions to use WEoN" href="use_instructions.html" />
-    <link rel="prev" title="Welcome to WEoN’s documentation!" href="index.html" /> 
+    <link rel="next" title="Instructions to use WEoN FlyT" href="use_instructions.html" />
+    <link rel="prev" title="Welcome to WEoN FlyT documentation!" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,7 +82,7 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="use_instructions.html">Instructions to use WEoN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="use_instructions.html">Instructions to use WEoN FlyT</a></li>
 </ul>
 
             
@@ -149,36 +149,50 @@
             
   <div class="section" id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<p>First, be aware that WEoN runs a PERL script that filter out regulations unlikely occurring
-from a gold standard GRN. Please follow the specific instructions for your
-platform <a class="reference external" href="https://www.perl.org/get.html">here</a>. Also, the app backend is in
-transition to python, so please also follow intructions to get python3
-<a class="reference external" href="https://www.python.org/about/gettingstarted/">here</a>.</p>
-<p>There are two different ways to obtain WEoN:</p>
-<ol class="arabic">
-<li><p class="first"><strong>Download from the Figshare repository (Recommended).</strong> WEoN can be downloaded
-from <a class="reference external" href="https://figshare.com/articles/WEoN_install_zip/7913912">Figshare repository</a>
-along with example data. Then, within Cytoscape, go to: Apps &gt;&gt; App Manager &gt;&gt; Install from File…</p>
-<p><em>OR</em></p>
-</li>
-<li><p class="first"><strong>Download from the Github repository.</strong> If you are familiar
-with git, the <a class="reference external" href="https://github.com/networkbiolab/WEoN">Github repository</a> can be cloned
-and the respective jar file installed from within Cytoscape: Apps &gt;&gt; App Manager &gt;&gt; Install from File…</p>
-</li>
+<p>First, be aware that WEoN FlyT runs a Perl script that filter out regulations unlikely occurring from a Reference GRN. Please follow specific instructions for your platform to install the Perl interpreter <a class="reference external" href="https://www.perl.org/get.html">here</a>.</p>
+<p><strong>Requeriments</strong></p>
+<ul class="simple">
+<li><p>Java: Instructions to install Java depends on your operating system. Windows and MacOS users should download Java 8 from <a class="reference external" href="https://www.java.com/es/download/manual.jsp">here</a> and follow the installer instructions. For Unix users, Java could be installed from the repository packages <cite>openjdk-8-jdk</cite> and <cite>openjdk-8-jre</cite> (e.g. <cite>apt-get install openjdk-8-jdk openjdk-8-jre</cite>).</p></li>
+<li><p>Cytoscape: Download the Cytoscape software from <a class="reference external" href="https://cytoscape.org/download.html">here</a>. The webpage will automatically determine your operating system and prompt a download button.</p></li>
+<li><p>Perl: Similarly to Java, Windows users should install a Perl interpreter. Please download from <a class="reference external" href="http://strawberryperl.com/">here</a> and follow the instructions. For MacOS and Unix operating systems, Perl can be already installed; if not, the user can install it from the repository.</p></li>
+</ul>
+<p><strong>Getting WEoN FlyT</strong></p>
+<p>WEoN Fly is freely available to download from <strong>Figshare</strong>. WEoN FlyT can be used in several operating systems (Linux, Windows and macOS) and you need to download a specific version (in zip format) of the tool for your operating system (OS).</p>
+<ul class="simple">
+<li><p>WEoN FlyT for Linux <a class="reference external" href="https://figshare.com/articles/WEoN_FlyT_for_Linux/11956758">download here</a></p></li>
+<li><p>WEoN FlyT for Windows <a class="reference external" href="https://figshare.com/articles/WEoN_FlyT_for_windows/11958972">download here</a></p></li>
+<li><p>WEoN FlyT for Mac <a class="reference external" href="https://figshare.com/articles/WEoN_FlyT_for_mac/11958942">download here</a></p></li>
+</ul>
+<p>Once you are in the download page, you can get the tool by cliking on the <strong>download button</strong> as is shown in the following image.</p>
+<img alt="_images/download.png" class="align-center" src="_images/download.png" />
+<p><strong>Installation</strong></p>
+<p>With the corresponding zip file for your OS, you need to uncompress it. After completion, you have now a subdirectory called <em>WEoN_FlyT</em>, which correspond to the scripts executed by WEoN FlyT and the <em>WEoN_FlyT.jar</em> file corresponding to the Cytoscape app. The jar file contains a graphical user interface (GUI) that allows to Cytoscape execute the filtering process encoded in WEoN FlyT.</p>
+<p>In order to install the scripts and the GUI, you need to do the following steps for the main folder and for the cytoscape app:</p>
+<ol class="arabic simple">
+<li><p><strong>WEoN_FlyT directory:</strong></p></li>
 </ol>
-<p>Additionally, please run <code class="docutils literal notranslate"><span class="pre">script.sh</span></code> or copy the PERL scripts to
-<code class="docutils literal notranslate"><span class="pre">/home/$USER/CytoscapeConfiguration/3/apps/installed</span></code>
-(*UNIX), while similar paths exist in MacOS and Windows OS.
-Please be aware you need a PERL interpreter to execute WEoN backend.</p>
+<ul class="simple">
+<li><p>Linux users: copy the folder to <em>/home/your_username</em></p></li>
+<li><p>Windows users: copy the folder to <em>C:</em></p></li>
+<li><p>MacOS users: copy the folder to <em>/Users/your_username</em></p></li>
+</ul>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last"><strong>Downloading from the Cytoscape App Store.</strong> We’ll upload WEoN to the Cytoscape
-<a class="reference external" href="https://apps.cytoscape.org/">App Store</a> soon, where it could be downloaded. However,
-example data could only be obtained from the Figshare repository due to size limitations.</p>
+<p class="admonition-title">Note</p>
+<p><strong>Additional instructions for Windows users:</strong>
+In some Windows operating systems, copying WEoN FlyT folder could require for admin permissions. For this case, we included an <strong>installation.bat</strong> file, which automatically will ask for these permissions and then will generate a copy of the folder in the <em>C:</em> directory.</p>
 </div>
+<ol class="arabic simple" start="2">
+<li><p><strong>WEoN_FlyT.jar file:</strong> In order to install the GUI, you need to open Cytoscape and then navigate to <em>Apps menu &gt;&gt; App Manager</em> and click on <em>Install from File</em>, as it is indicated in the following image.</p></li>
+</ol>
+<img alt="_images/select_file.png" class="align-center" src="_images/select_file.png" />
+<p>Clicking on the <em>Install from file</em> button will open a new window where you need to navigate to the directory containing the jar file and select it as shown in the next image.</p>
+<img alt="_images/selec_file2.png" class="align-center" src="_images/selec_file2.png" />
+<p>After selecting the jar file, the resulting proccess will be similar to the shown in the next image, and the installation process is finalized by clicking on the <em>close</em> button.</p>
+<img alt="_images/select_file3.png" class="align-center" src="_images/select_file3.png" />
+<p>Now you only need to go to the <em>Apps menu</em>, click on <em>WEoN FlyT - Weighted Epigenomic Network: Fly Tool</em> to start to use the tool.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last"><strong>Need Help?</strong>
+<p class="admonition-title">Note</p>
+<p><strong>Need Help?</strong>
 If you run into any problems with installation, please leave an issue in the
 official <a class="reference external" href="https://github.com/networkbiolab/WEoN">Github repository</a>.</p>
 </div>
@@ -192,10 +206,10 @@ official <a class="reference external" href="https://github.com/networkbiolab/WE
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="use_instructions.html" class="btn btn-neutral float-right" title="Instructions to use WEoN" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="use_instructions.html" class="btn btn-neutral float-right" title="Instructions to use WEoN FlyT" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to WEoN’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to WEoN FlyT documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

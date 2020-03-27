@@ -61,7 +61,7 @@ After selecting the jar file, the resulting proccess will be similar to the show
 .. image:: images/select_file3.png
 	:align: center
 
-Now you only need to go to the *Apps menu*, click on *Fly T-WEoN - Fly Tool Weighted Epigenomic Network* to start to use the tool.
+Now you only need to go to the *Apps menu*, click on *Fly T-WEoN - Fly Tool for Weighted Epigenomic Network* to start to use the tool.
 
 .. note::
 	**Need Help?**

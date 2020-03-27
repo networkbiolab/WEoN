@@ -1,15 +1,14 @@
-Instructions to use WEoN FlyT
-=============================
+Instructions to use Fly T-WEoN
+==============================
 
-This document contains the main instructions in order to use the **WEoN FlyT (Weighted Epigenetic Networks: Fly Tool)** Cytoscape app.
+This document contains the main instructions in order to use the **Fly T-WEoN (Fly Tool for Weighted Epigenetic Networks)** Cytoscape app.
 
-1. **Open the WEoN FlyT app**
+1. **Open the Fly T-WEoN app**
 
-Within Cytoscape, go to Apps >> WEoN FlyT - Weighted Epigenomic Network: Fly Tool. This will display the user interface as shown in the figure.
+Within Cytoscape, go to Apps >> Fly T-WEoN - Fly Tool Weighted Epigenomic Network. This will display the user interface as shown in the figure.
 
 2. **Interface**
-
-The WEoN FlyT interface is an input screen where the user complete required and optional data. In the backend, WEoN FlyT executes Perl scripts, therefore parsing correctly the data to arguments and call orderly the scripts to filter out unlikely ocurring gene regulations from a reference gene regulatory network.
+The Fly T-WEoN interface is an input screen where the user complete required and optional data. In the backend, Fly T-WEoN executes Perl scripts, therefore parsing correctly the data to arguments and call orderly the scripts to filter out unlikely ocurring gene regulations from a reference gene regulatory network.
 
 .. image:: images/interface.png
 	:align: center
@@ -25,13 +24,13 @@ The WEoN FlyT interface is an input screen where the user complete required and 
 
 - **Required data**
 
-In order to use WEoN FlyT, you need to provide at least three required data as listed as follow:
+In order to use Fly T-WEoN, you need to provide at least three required data as listed as follow:
 
 	1. **Network Definition**: This field corresponds to the reference GRN to which apply filters to generate the weighted GRN. We provide three references networks, which were constructed within a different cut-off of 1500, 2000, and 5000 nucleotides: if a Transcription Factor Binding Site or other regulatory element is contained in the cut-off upstream the Transcription Start Site of Drosophila melanogaster genes, then the GRN defines a connection between gene and regulator.
 
-	2. **Expression File**: WEoN FlyT employs RNA-seq data to filter out absent transcription factors and miRNAs from the Reference GRN. The RNA-seq data must be provided formatted in a two-columns file separated by tabulations. The first column is the gene name while the second is the expression of the corresponding gene. Expression could be reported as read counts, reads per kilobase million (RPKM) or fragments per kilobase million (FPKM). Data must be a single experiment or the average value of the experimental replication.
+	2. **Expression File**: Fly T-WEoN employs RNA-seq data to filter out absent transcription factors and miRNAs from the Reference GRN. The RNA-seq data must be provided formatted in a two-columns file separated by tabulations. The first column is the gene name while the second is the expression of the corresponding gene. Expression could be reported as read counts, reads per kilobase million (RPKM) or fragments per kilobase million (FPKM). Data must be a single experiment or the average value of the experimental replication.
 
-	.. 	WEoN FlyT use an internal dictionary to match gene names from the Reference Network and the Expression File. ES NECESARIO?
+	.. 	Fly T-WEoN use an internal dictionary to match gene names from the Reference Network and the Expression File. ES NECESARIO?
 
 	3. **Result folder**: A folder where results will be placed.
 
@@ -48,14 +47,14 @@ Respect to the ``Histone Mark Path Files`` button, once you click it a new windo
 
 3. **Execute filtering and visualization of results**
 
-After all data is selected, please click on ``Run WEoN FlyT``. The weighted GRN will be loaded in Cytoscape with the ``Create View`` button to display the time and/or tissue specific GRN.
+After all data is selected, please click on ``Run Fly T-WEoN``. The weighted GRN will be loaded in Cytoscape with the ``Create View`` button to display the time and/or tissue specific GRN.
 
 .. note::
-	It is important to remark that the filtering process could take a long time depending on your machine hardware and the number of files and information on them provided to WEoN FlyT. Please be patient.
+	It is important to remark that the filtering process could take a long time depending on your machine hardware and the number of files and information on them provided to Fly T-WEoN. Please be patient.
 
 4. **Details of the Output Files**
 
-A set of files are created after executing WEoN FlyT, which are located in the folder selected as output. These files are described as follow:
+A set of files are created after executing Fly T-WEoN, which are located in the folder selected as output. These files are described as follow:
 
 - *output_filter_PTMs.txt*: A file describing information about chromosome, id of the coding gene for the transcription factor (TF), starting coordinate of the transcription factor binding site (TFBS), ending coordinate of the TFBS, name of the post-translational modification (PTM) of histone tails (histone marks), starting coordinate of the PTM, ending coordinate of the PTM, open or closed chromatin state (represented as + or -) and place where the PTM was found (on the promotor region, P, or on the gene, G)
 

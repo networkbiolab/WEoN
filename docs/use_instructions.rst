@@ -5,7 +5,7 @@ This document contains the main instructions in order to use the **Fly T-WEoN (F
 
 1. **Open the Fly T-WEoN app**
 
-Within Cytoscape, go to Apps >> Fly T-WEoN - Fly Tool Weighted Epigenomic Network. This will display the user interface as shown in the figure.
+Within Cytoscape, go to Apps >> Fly T-WEoN - Fly Tool for Weighted Epigenomic Network. This will display the user interface as shown in the figure.
 
 2. **Interface**
 The Fly T-WEoN interface is an input screen where the user complete required and optional data. In the backend, Fly T-WEoN executes Perl scripts, therefore parsing correctly the data to arguments and call orderly the scripts to filter out unlikely ocurring gene regulations from a reference gene regulatory network.

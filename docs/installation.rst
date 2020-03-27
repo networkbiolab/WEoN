@@ -1,7 +1,7 @@
 Installation
 ============
 
-First, be aware that WEoN FlyT runs a Perl script that filter out regulations unlikely occurring from a Reference GRN. Please follow specific instructions for your platform to install the Perl interpreter `here <https://www.perl.org/get.html>`_.
+First, be aware that Fly T-WEoN  runs a Perl script that filter out regulations unlikely occurring from a Reference GRN. Please follow specific instructions for your platform to install the Perl interpreter `here <https://www.perl.org/get.html>`_.
 
 .. Also, the app backend is in transition to python, so please also follow intructions to get python3 `here <https://www.python.org/about/gettingstarted/>`_.
 
@@ -13,15 +13,15 @@ First, be aware that WEoN FlyT runs a Perl script that filter out regulations un
 
 - Perl: Similarly to Java, Windows users should install a Perl interpreter. Please download from `here <http://strawberryperl.com/>`_ and follow the instructions. For MacOS and Unix operating systems, Perl can be already installed; if not, the user can install it from the repository.
 
-**Getting WEoN FlyT**
+**Getting Fly T-WEoN**
 
-WEoN Fly is freely available to download from **Figshare**. WEoN FlyT can be used in several operating systems (Linux, Windows and macOS) and you need to download a specific version (in zip format) of the tool for your operating system (OS).
+Fly T-WEoN is freely available to download from **Figshare**. Fly T-WEoN can be used in several operating systems (Linux, Windows and macOS) and you need to download a specific version (in zip format) of the tool for your operating system (OS).
 
-- WEoN FlyT for Linux `download here <https://figshare.com/articles/WEoN_FlyT_for_Linux/11956758>`_
+- Fly T-WEoN for Linux `download here <https://figshare.com/articles/WEoN_FlyT_for_Linux/11956758>`_
 
-- WEoN FlyT for Windows `download here <https://figshare.com/articles/WEoN_FlyT_for_windows/11958972>`_
+- Fly T-WEoN for Windows `download here <https://figshare.com/articles/WEoN_FlyT_for_windows/11958972>`_
 
-- WEoN FlyT for Mac `download here <https://figshare.com/articles/WEoN_FlyT_for_mac/11958942>`_
+- Fly T-WEoN for Mac `download here <https://figshare.com/articles/WEoN_FlyT_for_mac/11958942>`_
 
 Once you are in the download page, you can get the tool by cliking on the **download button** as is shown in the following image.
 
@@ -30,12 +30,12 @@ Once you are in the download page, you can get the tool by cliking on the **down
 
 **Installation**
 
-With the corresponding zip file for your OS, you need to uncompress it. After completion, you have now a subdirectory called *WEoN_FlyT*, which correspond to the scripts executed by WEoN FlyT and the *WEoN_FlyT.jar* file corresponding to the Cytoscape app. The jar file contains a graphical user interface (GUI) that allows to Cytoscape execute the filtering process encoded in WEoN FlyT.
+With the corresponding zip file for your OS, you need to uncompress it. After completion, you have now a subdirectory called *WEoN_FlyT*, which correspond to the scripts executed by WEoN FlyT and the *WEoN_FlyT.jar* file corresponding to the Cytoscape app. The jar file contains a graphical user interface (GUI) that allows to Cytoscape execute the filtering process encoded in Fly T-WEoN.
 
 In order to install the scripts and the GUI, you need to do the following steps for the main folder and for the cytoscape app:
 
 1. **WEoN_FlyT directory:**
-
+Fly T-
 - Linux users: copy the folder to */home/your_username*
 
 - Windows users: copy the folder to *C:*
@@ -61,7 +61,7 @@ After selecting the jar file, the resulting proccess will be similar to the show
 .. image:: images/select_file3.png
 	:align: center
 
-Now you only need to go to the *Apps menu*, click on *WEoN FlyT - Weighted Epigenomic Network: Fly Tool* to start to use the tool.
+Now you only need to go to the *Apps menu*, click on *Fly T-WEoN - Fly Tool Weighted Epigenomic Network* to start to use the tool.
 
 .. note::
 	**Need Help?**

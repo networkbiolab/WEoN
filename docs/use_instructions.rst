@@ -36,7 +36,7 @@ In order to use Fly T-WEoN, you need to provide at least three required data as 
 
 - **Optional data**
 
-If you have data from DNase, Histone modifications and/or methylation experiments, you can use it to complement RNA-seq data and get a more specific Gene Regulation Network.
+If you have data from DNase (or ATAC-seq), Histone modifications and/or methylation experiments, you can use it to complement RNA-seq data and get a more specific Gene Regulation Network.
 
 So, for the ``DNase file`` and ``Methylation file`` fields, you need to provide four-columns files separated by tabulations. Each column correspond, in order, to the chromosome, the initial coordinate, the ending coordinate, and the score for the mapped feature. Both files has an associated ``Score`` field used as a threshold value to dismiss lower score values from the original data. Default is zero, which means that all mapped features in the DNase and Methylation files will be used in the filtering process.
 
